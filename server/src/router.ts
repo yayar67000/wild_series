@@ -23,8 +23,8 @@ router.get("/api/programs", programActions.browse);
 router.get("/api/programs/:id", programActions.read);
 //Declaration de la route api/programs
 
-import catagerieActions from "./modules/item/catagerieActions";
-router.get("/api/categories", catagerieActions.browse);
-router.get("/api/categories/:id", catagerieActions.read);
+import categorieActions from "./modules/item/categorieActions";
+router.get("/api/categories", categorieActions.browse);
+router.get("/api/categories/:id", categorieActions.read);
 
 export default router;
