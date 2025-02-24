@@ -7,7 +7,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 // Import the main app component
 import App from "./App";
-import Programs from "./pages/programs";
+import Programs from "./pages/Programs";
 
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
@@ -36,6 +36,10 @@ const router = createBrowserRouter([
           }
           return response.json();
         },
+      },
+      {
+        path: "/programs/:id",
+        element: <Programs />,
       },
     ],
   },
